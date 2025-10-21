@@ -1,0 +1,31 @@
+{
+  "name": "ai-todolist",
+  "version": "1.0.0",
+  "description": "AI-powered TodoList web application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "todo",
+    "ai",
+    "react",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "mongodb": "^6.20.0",
+    "tailwindcss": "^4.1.14"
+  }
+}
